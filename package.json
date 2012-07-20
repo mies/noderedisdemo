@@ -1,0 +1,8 @@
+{
+  "name" : "redis demo",
+  "version" : "0.0.1",
+  "description" : "test app",
+  "dependencies" : {
+    "redis" : "0.7.2"
+  }
+}

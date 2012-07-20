@@ -1,0 +1,10 @@
+{ 
+  "npm_test" : false,
+  "services": {
+    "redis" : true
+  }
+}
+
+
+
+
