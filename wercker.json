@@ -1,5 +1,5 @@
 { 
-  "npm_test" : false,
+  "npm_test" : true,
   "services": {
     "redis" : true
   }
