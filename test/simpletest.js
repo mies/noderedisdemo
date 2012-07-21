@@ -8,6 +8,9 @@ exports.testSets = function(test) {
   client.sadd("some set", "mem 3");
   client.sadd("some set", "mem 4");
   client.smembers("missing set", function(err, reply) {
+    if (err) {
+      console.log(err);
+    }
     console.log(reply);
   });
 };
