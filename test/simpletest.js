@@ -1,4 +1,5 @@
-var redis = require("redis");
+var redis = require('redis');
+var process = require('process');
 
 var client = redis.createClient(6379, process.env.WERCKER_REDIS_IPADDRESS)
 
