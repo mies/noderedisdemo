@@ -1,7 +1,8 @@
 var redis = require('redis');
-var process = require('process');
 
-var client = redis.createClient(6379, process.env.WERCKER_REDIS_IPADDRESS)
+var client = redis.createClient(6379, process.env.WERCKER_REDIS_IPADDRESS);
+
+console.log(process.env.WERCKER_REDIS_IPADDRESS);
 
 exports.testSets = function(test) {
   client.sadd("some set", "mem 1");
